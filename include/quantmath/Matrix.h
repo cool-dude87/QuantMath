@@ -17,6 +17,9 @@ private:
 public:
     Matrix(std::initializer_list<std::initializer_list<double>> values);
 
+    Matrix(std::size_t rows, std::size_t columns, double value);
+    static Matrix zeros(std::size_t rows, std::size_t columns);
+
     std::size_t rows() const;
     std::size_t columns() const;
 
@@ -41,6 +44,8 @@ public:
     Vector column(std::size_t index) const;
 
     Matrix operator*(const Matrix& other) const;
+
+    Matrix T() const;
 };
 
 std::ostream& operator<<(std::ostream& os, const Matrix& matrix);

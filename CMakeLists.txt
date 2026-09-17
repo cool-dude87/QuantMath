@@ -19,13 +19,12 @@ target_include_directories(QuantMath PUBLIC
 )
 
 # add test example 
-add_executable(vector_test
-    examples/vector_test.cpp   
+add_executable(quantmath_test  
     examples/functions.cpp 
     examples/functions.h 
     examples/main.cpp  
 )   
 
-target_link_libraries(vector_test
+target_link_libraries(quantmath_test
     QuantMath
 )

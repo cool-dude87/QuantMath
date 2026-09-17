@@ -29,6 +29,30 @@ Matrix::Matrix(
     }
 }
 
+Matrix::Matrix(
+    std::size_t rows,
+    std::size_t columns,
+    double value
+){
+    if (rows == 0 || columns == 0){
+        throw std::invalid_argument(
+            "Matrix dimensions must be greater than zero"
+        );
+
+    }
+    for (std::size_t i{0}; i < rows; ++i){
+        data.push_back(Vector::full(columns,value));
+
+    }
+}
+
+Matrix Matrix::zeros(
+    std::size_t rows,
+    std::size_t columns
+) {
+    return Matrix(rows, columns, 0.0);
+}
+
 
 // Number of rows
 std::size_t Matrix::rows() const {
@@ -272,12 +296,34 @@ Vector Matrix::column(std::size_t index) const {
     return result;
 }
 
-// Matrix Matrix::operator*(const Matrix& other) const {
-//     Matrix result = *this;
 
-//     for (size_t i{0}; i < other.rows(); ++i) 
+Matrix Matrix::operator*(const Matrix& other) const {
 
-// }
+    if (columns() != other.rows()) {
+        throw std::invalid_argument("The dimensions arent allowed on these matrices");
+    }
+
+    Matrix result = Matrix::zeros(rows(), other.columns());
+
+    for (std::size_t i{0}; i < result.rows(); ++i){
+        for (std::size_t j{0}; j < other.columns(); ++j){
+            result(i, j) = data[i].dot(other.column(j));
+        }
+    }
+    return result;
+}
+
+Matrix Matrix::T() const {
+    Matrix result = Matrix::zeros(columns(), rows());
+
+    for (std::size_t i{0}; i < rows(); ++i){
+        for (std::size_t j{0}; j < columns(); ++j){
+            result(j,i) = (*this)(i,j);
+        }
+    }
+
+    return result;
+}
 
 std::ostream& operator<<(std::ostream& os, const Matrix& matrix) {
     for (size_t i{0}; i < matrix.rows(); ++i) {
