@@ -4,7 +4,7 @@
 #include <initializer_list>
 #include <iostream>
 
-namespace quantmethods {
+namespace quantmath {
 
 class Vector {
 

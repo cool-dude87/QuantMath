@@ -1,9 +1,9 @@
-#include <quantmethods/Vector.h>
+#include <quantmath/Vector.h>
 #include <cmath>
 #include <stdexcept>
 #include <algorithm>
 
-namespace quantmethods {
+namespace quantmath {
 
 /*********************************************************** 
 * Constructors
