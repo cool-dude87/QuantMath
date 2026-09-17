@@ -11,6 +11,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 
 add_library(QuantMath
     src/Vector.cpp
+    src/Matrix.cpp
 )
 
 target_include_directories(QuantMath PUBLIC 
@@ -19,7 +20,10 @@ target_include_directories(QuantMath PUBLIC
 
 # add test example 
 add_executable(vector_test
-    examples/vector_test.cpp    
+    examples/vector_test.cpp   
+    examples/functions.cpp 
+    examples/functions.h 
+    examples/main.cpp  
 )   
 
 target_link_libraries(vector_test
