@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/benfielding/BenMath/src/Vector.cpp" "CMakeFiles/BenMath.dir/src/Vector.cpp.o" "gcc" "CMakeFiles/BenMath.dir/src/Vector.cpp.o.d"
+  "/home/benfielding/QuantMath/src/Vector.cpp" "CMakeFiles/QuantMath.dir/src/Vector.cpp.o" "gcc" "CMakeFiles/QuantMath.dir/src/Vector.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

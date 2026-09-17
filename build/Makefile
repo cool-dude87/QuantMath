@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/benfielding/BenMath
+CMAKE_SOURCE_DIR = /home/benfielding/QuantMath
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/benfielding/BenMath/build
+CMAKE_BINARY_DIR = /home/benfielding/QuantMath/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/benfielding/BenMath/build/CMakeFiles /home/benfielding/BenMath/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benfielding/QuantMath/build/CMakeFiles /home/benfielding/QuantMath/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/benfielding/BenMath/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/benfielding/QuantMath/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BenMath
+# Target rules for targets named QuantMath
 
 # Build rule for target.
-BenMath: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BenMath
-.PHONY : BenMath
+QuantMath: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 QuantMath
+.PHONY : QuantMath
 
 # fast build rule for target.
-BenMath/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BenMath.dir/build.make CMakeFiles/BenMath.dir/build
-.PHONY : BenMath/fast
+QuantMath/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantMath.dir/build.make CMakeFiles/QuantMath.dir/build
+.PHONY : QuantMath/fast
 
 #=============================================================================
 # Target rules for targets named vector_test
@@ -171,7 +171,7 @@ src/Vector.o: src/Vector.cpp.o
 
 # target to build an object file
 src/Vector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BenMath.dir/build.make CMakeFiles/BenMath.dir/src/Vector.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantMath.dir/build.make CMakeFiles/QuantMath.dir/src/Vector.cpp.o
 .PHONY : src/Vector.cpp.o
 
 src/Vector.i: src/Vector.cpp.i
@@ -179,7 +179,7 @@ src/Vector.i: src/Vector.cpp.i
 
 # target to preprocess a source file
 src/Vector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BenMath.dir/build.make CMakeFiles/BenMath.dir/src/Vector.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantMath.dir/build.make CMakeFiles/QuantMath.dir/src/Vector.cpp.i
 .PHONY : src/Vector.cpp.i
 
 src/Vector.s: src/Vector.cpp.s
@@ -187,7 +187,7 @@ src/Vector.s: src/Vector.cpp.s
 
 # target to generate assembly for a file
 src/Vector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BenMath.dir/build.make CMakeFiles/BenMath.dir/src/Vector.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/QuantMath.dir/build.make CMakeFiles/QuantMath.dir/src/Vector.cpp.s
 .PHONY : src/Vector.cpp.s
 
 # Help Target
@@ -198,7 +198,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BenMath"
+	@echo "... QuantMath"
 	@echo "... vector_test"
 	@echo "... examples/vector_test.o"
 	@echo "... examples/vector_test.i"

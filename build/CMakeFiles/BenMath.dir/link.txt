@@ -1,2 +1,0 @@
-/usr/bin/ar qc libBenMath.a CMakeFiles/BenMath.dir/src/Vector.cpp.o
-/usr/bin/ranlib libBenMath.a

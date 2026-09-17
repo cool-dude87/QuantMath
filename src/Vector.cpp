@@ -1,10 +1,9 @@
-#include <benmath/Vector.h>
-
+#include <quantmethods/Vector.h>
 #include <cmath>
 #include <stdexcept>
 #include <algorithm>
 
-namespace benmath {
+namespace quantmethods {
 
 /*********************************************************** 
 * Constructors

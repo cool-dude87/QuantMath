@@ -4,7 +4,7 @@
 #include <initializer_list>
 #include <iostream>
 
-namespace benmath {
+namespace quantmethods {
 
 class Vector {
 

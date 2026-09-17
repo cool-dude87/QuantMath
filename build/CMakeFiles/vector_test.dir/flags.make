@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/benfielding/BenMath/include
+CXX_INCLUDES = -I/home/benfielding/QuantMath/include
 
 CXX_FLAGS = -std=gnu++17
 
