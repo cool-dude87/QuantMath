@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/vector_test.dir/examples/vector_test.cpp.o -o vector_test  libQuantMath.a 

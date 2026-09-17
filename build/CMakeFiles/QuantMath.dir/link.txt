@@ -1,2 +1,0 @@
-/usr/bin/ar qc libQuantMath.a CMakeFiles/QuantMath.dir/src/Vector.cpp.o
-/usr/bin/ranlib libQuantMath.a

@@ -1,4 +1,0 @@
-/home/benfielding/QuantMath/build/CMakeFiles/QuantMath.dir
-/home/benfielding/QuantMath/build/CMakeFiles/vector_test.dir
-/home/benfielding/QuantMath/build/CMakeFiles/edit_cache.dir
-/home/benfielding/QuantMath/build/CMakeFiles/rebuild_cache.dir
