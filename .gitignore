@@ -1,0 +1,9 @@
+# CMake build output
+build/
+
+# Compiled C++ files
+*.o
+*.a
+
+# Executables
+*.out
